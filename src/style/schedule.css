@@ -1,0 +1,121 @@
+.list{
+    color: var(--content-primary);
+    width: 44.5rem;
+    height: auto;
+    gap: 1rem;
+    background-color: var(--bg-secondary);
+    border-radius: .5rem;
+    padding: 1rem;
+    
+
+    & ul{
+        width: 100%;
+        justify-content: space-between;
+        text-decoration: none;
+        list-style: none;
+        & li{
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+}
+
+.time{
+    justify-content: space-between;
+    border-bottom: 1px solid var(--bg-tertiary);
+    padding-bottom: 1rem;
+    & .flex{
+        gap: .5rem;
+    }
+}
+
+.gray{
+    color: var(--content-secondary);
+}
+
+.tertiary{
+    color: var(--content-tertiary);
+}
+
+.remove{
+    cursor: pointer;
+}
+
+button{
+    all: unset;
+
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+
+    width: 13.6rem;
+    height: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #050505;
+    background-color: var(--bg-brand);
+    border-radius: .5rem;
+
+    font: var(--lb-medium);
+    cursor: pointer;
+    
+    
+}
+
+@media (width<80em) {
+    .list{
+        width: 21.875rem;
+        display: grid;
+        gap: 1rem;
+
+        & ul li {
+        display: grid;
+        grid-template-columns: max-content 1fr auto;
+        grid-template-rows: auto auto;
+        column-gap: .5rem;
+        row-gap: .4rem;
+        }
+
+        & .time {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        & .name {
+            grid-column: 2/4;
+            grid-row: 1;
+        }
+
+        & .service {
+            grid-column:  1;
+            grid-row: 2;
+        }
+
+        & .remove {
+            grid-column: 3;
+            grid-row: 2;
+            justify-self: end;
+            align-self: end;
+        }
+    }
+
+    footer{
+        width: 100%;
+        height: 5.25rem;
+        background-color: var(--bg-secondary);
+        position: fixed;
+        bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & button{
+            position: unset;
+        }
+    }
+   
+    
+}

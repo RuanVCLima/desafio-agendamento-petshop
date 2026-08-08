@@ -1,14 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,700;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mundo Pet</title>
+    <link rel="stylesheet" href="./src/style/index.css">
 </head>
 <body>
+    <div class="logo"><img src="./src/assets/dog.svg" alt=""> MUNDO PET</div>
+
+    <div class="your-schedule flex">
+
+        <div class="title grid">
+            <h1>Sua agenda</h1>
+            <p>Aqui você pode ver todos os clientes e serviços agendados para hoje.
+            </p>
+        </div>
+
+        <div class="input flex">
+            <img src="./src/assets/calendar.svg" alt="">
+            <input type="date" id="date" name="date">
+        </div>
+
+       
+    </div>
+     <div class="list grid">
+            <div class="time flex">
+                <div class="flex">
+                    <img src="./src/assets/sun-fog.svg" alt="">
+                    <h2>Manhã</h2>
+                </div>
+                <p class="gray">09h-12h</p>
+            </div>
+
+            <ul>
+                <li class="flex">
+                        <span class="time">09:00</span>
+                        <span class="name">
+                            Thor/<span class="gray">Fernanda Costa</span>
+                        </span>
+                        <span class="service gray">Vacination</span>
+                        <span class="remove tertiary">Remover agendamento</span>
+                    
+                </li>
+            </ul>
+    </div>
+
+    <footer>
+        <button>NOVO AGENDAMENTO</button>
+    </footer>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+
+        <button id="close-modal" class="close">&times;</button>
+
+        <div class="modal-title">
+            <h2>Agende um atendimento</h2>
+            <p>Preencha os dados do cliente para realizar o agendamento:</p>
+        </div>
+
+        <form>
+
+            <div class="form-group">
+                <label for="name-of-tutor">Nome do tutor</label>
+
+                <div class="modal-input">
+                    <img src="./src/assets/user.svg" alt="">
+                    <input
+                        type="text"
+                        id="name-of-tutor"
+                        placeholder="Helena Souza"
+                    >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="name-of-pet">Nome do pet</label>
+
+                <div class="modal-input">
+                    <img src="./src/assets/pet-paw.svg" alt="">
+                    <input
+                        type="text"
+                        id="name-of-pet"
+                        placeholder="Cheddar"
+                    >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefone</label>
+
+                <div class="modal-input">
+                    <img src="./src/assets/phone.svg" alt="">
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="(00) 0 0000-0000"
+                    >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="service">Descrição do serviço</label>
+
+                <textarea
+                    id="service"
+                    placeholder="Banho e tosa"
+                ></textarea>
+            </div>
+
+            <div class="date-time">
+
+                <div class="form-group">
+                    <label for="date">Data</label>
+
+                    <div class="modal-input">
+                        <img src="./src/assets/calendar.svg" alt="">
+                        <input type="date" id="date">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Hora</label>
+
+                    <div class="modal-input">
+                        <img src="./src/assets/clock.svg" alt="">
+                        <input type="time" id="time" value="12:00">
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="schedule-button" type="submit">
+                AGENDAR
+            </button>
+
+        </form>
+
+    </div>
+</div>
     
 </body>
 </html>
