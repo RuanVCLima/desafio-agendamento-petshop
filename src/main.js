@@ -1,7 +1,10 @@
 "use strict"
 
-//CSS
+//dayjs configuration
+import "./libs/dayjs"
 
+//CSS
 import "./style/global.css"
 import "./style/form.css"
 import "./style/schedule.css"
+
