@@ -104,13 +104,14 @@ button{
 
     footer{
         width: 100%;
-        height: 5.25rem;
+        height: 7.25rem;
         background-color: var(--bg-secondary);
         position: fixed;
         bottom: 2rem;
         display: flex;
         align-items: center;
         justify-content: center;
+        
 
         & button{
             position: unset;

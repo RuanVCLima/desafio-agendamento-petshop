@@ -1,0 +1,18 @@
+{
+  "name": "Mundo Pet",
+  "description": "Aplicação web para agendamentos de serviçps ao pet.",
+  "author": "Ruan Victor",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack serve",
+    "server": "json-server --watch server.json --port 3333"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-beta.15"
+  },
+  "devDependencies": {
+    "webpack": "^5.109.2",
+    "webpack-cli": "^7.2.2",
+    "webpack-dev-server": "^6.0.0"
+  }
+}
