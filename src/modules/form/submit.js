@@ -8,18 +8,44 @@ const personalDate = document.getElementById("date")
 const chosingDate = document.getElementById("date-schedule")
 const time = document.getElementById("time")
 
-personalDate.value = dayjs(new Date()).format("YYYY-MM-DD")
-chosingDate.value = dayjs(new Date()).format("YYYY-MM-DD")
-time.value = dayjs().format("HH:mm")
+const actualDate = dayjs(new Date()).format("YYYY-MM-DD")
 
-personalDate.min = dayjs(new Date()).format("YYYY-MM-DD")
-chosingDate.min = dayjs(new Date()).format("YYYY-MM-DD")
-time.min = dayjs().format("HH:mm")
+personalDate.value = actualDate
+chosingDate.value = actualDate
 
+personalDate.min = actualDate
+chosingDate.min = actualDate
 
 function validatingTime(){
-    time.min = dayjs().format("HH:mm")
+    const actualDate = dayjs().startOf("day")
+    const chosenDate = dayjs(chosingDate.value)
+
+    time.innerHTML = ""
+    const currentHour = dayjs().hour()
+    const currentMinute = dayjs().minute()
+
+    for (let hour = 9; hour <= 21; hour++) {
+
+        const timeRange = `${String(hour).padStart(2, "0")}:00`
+        
+
+        const option = document.createElement("option")
+        option.value = timeRange
+        option.textContent = timeRange
+
+        if (chosenDate.isSame(actualDate,"day") &&
+            (hour<currentHour || currentHour === hour && currentMinute>0)) {
+            option.disabled = true
+        }
+
+        time.appendChild(option)
+    }
 }
+
+
+chosingDate.addEventListener("change",()=>{
+    validatingTime()
+})
 
 closeModal.addEventListener("click",(event)=>{
     event.preventDefault()
@@ -33,6 +59,7 @@ btNewSchedule.addEventListener("click",(event)=>{
 )
 form.onsubmit = (event)=>{
     event.preventDefault()
-    validatingTime()
     console.log("Enviado")
 }
+
+validatingTime()

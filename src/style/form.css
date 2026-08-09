@@ -185,6 +185,19 @@ form {
     font: var(--pg-medium);
 }
 
+.modal-input select{
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+
+    background: var(--bg-tertiary);
+    color: var(--content-primary);
+}
+
+
+
 .modal-input input::placeholder,
 textarea::placeholder {
     color: var(--content-secondary);
