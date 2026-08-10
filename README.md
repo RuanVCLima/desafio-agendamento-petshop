@@ -8,10 +8,6 @@ O projeto foi desenvolvido como parte de um desafio prático para aplicar concei
 
 ## 📸 Preview
 
-> Adicione aqui uma imagem ou GIF do projeto quando estiver disponível.
-
-## 📸 Preview
-
 <div align="center">
 
 ![Preview do projeto](./docs/src/assets/preview.gif)
@@ -116,7 +112,7 @@ npm run server
 
 A API ficará disponível, por padrão, em:
 
-http://localhost:3333
+[http://localhost:3333](https://project-hair-day-api.onrender.com)
 📦 Scripts disponíveis
 
 Os principais scripts configurados no package.json são:
