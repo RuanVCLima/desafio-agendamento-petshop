@@ -1,3 +1,3 @@
 export const apiConfig = {
-    baseURL: "https://ruanvclima.github.io/desafio-agendamento-petshop"
+    baseURL: "https://project-hair-day-api.onrender.com"
 }

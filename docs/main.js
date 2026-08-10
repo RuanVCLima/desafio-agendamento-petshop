@@ -93,7 +93,7 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpa
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   apiConfig: () => (/* binding */ apiConfig)\n/* harmony export */ });\nconst apiConfig = {\n  baseURL: \"https://ruanvclima.github.io/desafio-agendamento-petshop\"\n};\n\n//# sourceURL=webpack://Mundo_Pet/./src/services/api-config.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   apiConfig: () => (/* binding */ apiConfig)\n/* harmony export */ });\nconst apiConfig = {\n  baseURL: \"https://project-hair-day-api.onrender.com\"\n};\n\n//# sourceURL=webpack://Mundo_Pet/./src/services/api-config.js?\n}");
 
 /***/ },
 
