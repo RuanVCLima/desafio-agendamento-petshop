@@ -14,7 +14,7 @@ O projeto foi desenvolvido como parte de um desafio prático para aplicar concei
 
 <div align="center">
 
-![Preview do projeto](./docs/preview.gif)
+![Preview do projeto](./docs/assets/preview.gif)
 
 </div>
 
