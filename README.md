@@ -112,7 +112,7 @@ npm run server
 
 A API ficará disponível, por padrão, em:
 
-http://localhost:3333
+[http://localhost:3333](https://project-hair-day-api.onrender.com)
 📦 Scripts disponíveis
 
 Os principais scripts configurados no package.json são:
