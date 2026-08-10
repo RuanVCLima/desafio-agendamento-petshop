@@ -8,10 +8,6 @@ O projeto foi desenvolvido como parte de um desafio prático para aplicar concei
 
 ## 📸 Preview
 
-> Adicione aqui uma imagem ou GIF do projeto quando estiver disponível.
-
-## 📸 Preview
-
 <div align="center">
 
 ![Preview do projeto](./docs/src/assets/preview.gif)
