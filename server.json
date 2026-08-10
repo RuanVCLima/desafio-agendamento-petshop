@@ -1,3 +1,45 @@
 {
-    "schedules": []
+  "schedules": [
+    {
+      "id": "yIhmmNWFSnI",
+      "nameTutor": "Ruan Victor",
+      "namePet": "tobi",
+      "celphone": "(81) 98356-7876",
+      "service": "tosa",
+      "when": "2026-08-09T12:00:00.000Z"
+    },
+    {
+      "id": "jLclDuyom0Y",
+      "nameTutor": "Andrey Henrique",
+      "namePet": "Negão",
+      "celphone": "81986747431",
+      "service": "Cortar  unha",
+      "when": "2026-08-09T18:00:00.000Z"
+    },
+    {
+      "id": "5QrLvDZ7DTY",
+      "nameTutor": "Riso",
+      "namePet": "pirata",
+      "celphone": "81984422486",
+      "service": "banho",
+      "when": "2026-08-09T19:00:00.000Z"
+    },
+    {
+      "id": "bE8uW6O6FQw",
+      "nameTutor": "Andrey Henrique",
+      "namePet": "tobi",
+      "celphone": "(81) 98356-7876",
+      "service": "cortar as unhas",
+      "when": "2026-08-10T15:00:00.000Z"
+    },
+    {
+      "id": "Piqo_cQ3IK4",
+      "nameTutor": "Andrey Henrique",
+      "namePet": "pirata",
+      "celphone": "(81) 98356-7876",
+      "service": "banho",
+      "when": "2026-08-10T17:00:00.000Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
